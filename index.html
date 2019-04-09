@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <title>MeMo</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Piotr Janusz">
+    <meta name="description" content="classic memory game">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>In Memory of Web Developer</h1>
+        </header>
+
+        <section class="scores">
+            <ul class="stars">
+                <li>
+                    <i class="far fas fa-star"></i>
+                </li>
+                <li>
+                    <i class="far fas fa-star"></i>
+                </li>
+                <li>
+                    <i class="far fas fa-star"></i>
+                </li>
+            </ul>
+
+            <p>
+                Moves:
+                <span id="moves">0</span>
+            </p>
+
+            <p>
+                Time:
+                <span id="timer">00:00</span>
+            </p>
+            <span id="restart" class="fas fa-undo restart"></span>
+        </section>
+
+        <ul class="board">
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-css3"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-html5"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-js-square"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-git"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-sass"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-react"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-node"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-grunt"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-css3"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-html5"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-js-square"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-git"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-sass"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-react"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-node"></span>
+            </li>
+            <li class="card">
+                <span class="front far fa-question-circle"></span>
+                <span class="back fab fa-grunt"></span>
+            </li>
+        </ul>
+        <div id="grats" class="grats-div hidden">
+            <h2>Congratulations!!</h2>
+            <p>Cleared in
+                <span id="clear-time"></span>
+                with
+                <span id="stars-score"></span>
+                star(s)!!
+            </p>
+            <div id="again" class="again-button">Play again!</div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
